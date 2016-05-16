@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (VerificationVIN)
-// 汽车车辆识别代码验证
+// 验证车辆识别代码
 - (BOOL)ValidateVIN;
 
 @end
