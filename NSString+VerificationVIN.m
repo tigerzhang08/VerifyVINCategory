@@ -1,6 +1,5 @@
 //
 //  NSString+VerificationVIN.m
-//  TestVinalGorithm
 //
 //  Created by tigerzhang on 16/5/16.
 //  Copyright © 2016年 Xcompany. All rights reserved.
@@ -10,7 +9,7 @@
 
 @implementation NSString (VerificationVIN)
 
-- (BOOL)ValidateVIN {
+- (BOOL)validateVIN {
     // 先用正则过滤 (只能包含0-9  A-H,J-N,P,R-Z 且必须为17位)
     NSString *vinRegex = @"^[A-HJ-NPR-Z0-9]{0,17}$";
     NSPredicate *vinTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", vinRegex];
