@@ -1,15 +1,15 @@
 //
-//  NSString+VerificationVIN.m
+//  NSString+VerifyVIN.m
 //
 //  Created by tigerzhang on 16/5/16.
 //  Copyright © 2016年 Xcompany. All rights reserved.
 //
 
-#import "NSString+VerificationVIN.h"
+#import "NSString+VerifyVIN.h"
 
-@implementation NSString (VerificationVIN)
+@implementation NSString (VerifyVIN)
 
-- (BOOL)validateVIN {
+- (BOOL)verifyVIN {
     // 先用正则过滤 (只能包含0-9  A-H,J-N,P,R-Z 且必须为17位)
     NSString *vinRegex = @"^[A-HJ-NPR-Z0-9]{0,17}$";
     NSPredicate *vinTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", vinRegex];

@@ -1,5 +1,5 @@
 //
-//  NSString+VerificationVIN.h
+//  NSString+VerifyVIN.h
 //
 //  Created by tigerzhang on 16/5/16.
 //  Copyright © 2016年 Xcompany. All rights reserved.
@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (VerificationVIN)
+@interface NSString (VerifyVIN)
 // 验证车辆识别代码
-- (BOOL)validateVIN;
+- (BOOL)verifyVIN;
 
 @end
